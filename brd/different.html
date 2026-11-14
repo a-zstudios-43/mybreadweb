@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal bread!</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: linear-gradient(rgba(30, 18, 12, 0.55), rgba(30, 18, 12, 0.55)), url('img/bread.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            min-height: 100vh;
+            color: #3e2723;
+            font-family: Georgia, 'Times New Roman', serif;
+            line-height: 1.7;
+            padding-bottom: 3rem;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: rgba(62, 39, 35, 0.92);
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .navbar ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            list-style: none;
+            padding: 1rem;
+            gap: 1.5rem;
+        }
+
+        .navbar a {
+            color: #fff8e7;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            text-decoration: none;
+            text-transform: capitalize;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #d4a373;
+            color: #2c1810;
+        }
+
+        /* Main Heading & Content */
+        h1 {
+            color: #fff8e7;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+            font-size: 3rem;
+            text-align: center;
+            text-transform: capitalize;
+            margin-top: 3rem;
+            padding: 0 1rem;
+        }
+
+        p {
+            background-color: rgba(255, 253, 249, 0.94);
+            border-left: 5px solid #d4a373;
+            border-radius: 8px;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+            font-size: 1.15rem;
+            max-width: 700px;
+            margin: 1.25rem auto;
+            padding: 1.5rem 2rem;
+        }
+
+        p::first-letter {
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">bread</a></li>
+                <li><a href="what.html">what is bread?</a></li>
+                <li><a href="recipe.html">recipe</a></li>
+                <li><a href="good.html">why is it so good?</a></li>
+                <li><a href="different.html">different bread</a></li>
+            </ul>
+        </div>
+    </nav>
+    <h1>world bread</h1>
+    <br>
+    <p>you may already know that bread is universal, however, do you know the names?</p>
+    <p>naan is a type of bread from india that is flat, it is typically eaten with butter chicken and curries. It is simillar to another type of bread: Arepa, another flatbread, but instead, arepa is stuffed with savoury fillings. Another type of bread is Shokupan (食パン) from japan, it relies heavily more onbutter and eggs, it has a milky taste, it is: "the milk bread"</p>
+</body>
+</html>

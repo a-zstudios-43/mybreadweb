@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to make bread.</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: linear-gradient(rgba(30, 18, 12, 0.55), rgba(30, 18, 12, 0.55)), url('img/bread.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            min-height: 100vh;
+            color: #3e2723;
+            font-family: Georgia, 'Times New Roman', serif;
+            line-height: 1.7;
+            padding-bottom: 3rem;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: rgba(62, 39, 35, 0.92);
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .navbar ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            list-style: none;
+            padding: 1rem;
+            gap: 1.5rem;
+        }
+
+        .navbar a {
+            color: #fff8e7;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            text-decoration: none;
+            text-transform: capitalize;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #d4a373;
+            color: #2c1810;
+        }
+
+        h1 {
+            color: #fff8e7;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+            font-size: 3rem;
+            text-align: center;
+            margin-top: 3rem;
+            padding: 0 1rem;
+        }
+
+        /* Section labels ("ingredients:" and "steps:") */
+        body > p {
+            background-color: #6d4c41;
+            color: #fff8e7;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            font-size: 1.25rem;
+            text-transform: capitalize;
+            max-width: 700px;
+            margin: 1.5rem auto 0 auto;
+            padding: 0.75rem 2rem;
+            border-radius: 8px 8px 0 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Recipe cards ONLY (targets lists directly inside body, not inside nav) */
+        body > ul {
+            background-color: rgba(255, 253, 249, 0.94);
+            border-left: 5px solid #d4a373;
+            border-radius: 0 0 8px 8px;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+            font-size: 1.15rem;
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 1.5rem 2rem 1.5rem 3.2rem;
+        }
+
+        body > ul li {
+            margin-bottom: 0.6rem;
+        }
+
+        body > ul li::first-letter {
+            text-transform: uppercase;
+        }
+
+        /* "yum!" message inside the steps list */
+        body > ul p {
+            color: #8d4925;
+            font-weight: bold;
+            font-size: 1.3rem;
+            margin-top: 1rem;
+            margin-left: -1.2rem;
+        }
+
+        body > ul p::first-letter {
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">bread</a></li>
+                <li><a href="what.html">what is bread?</a></li>
+                <li><a href="recipe.html">recipe</a></li>
+                <li><a href="good.html">why is it so good?</a></li>
+                <li><a href="different.html">different bread</a></li>
+            </ul>
+        </div>
+    </nav>
+    <h1>How to make bread 🍞</h1>
+    <br>
+    <p>ingredients:</p>
+    <ul>
+        <li>flour.</li>
+        <li>water.</li>
+        <li>yeast.</li>
+    </ul>
+    <br>
+    <br>
+    <p>steps:</p>
+    <ul>
+        <li>first, get a bowl and put flour and water in it.</li>
+        <li>mix</li>
+        <li>knead the dough, then add yeast</li>
+        <li>place in a bowl, cover with a cloth and wait overnight.</li>
+        <li>take the kneaded dough out of the bowl</li>
+        <li>place it in the oven and bake at 122°C (251.6°F)</li>
+        <p>yum!</p>
+    </ul>
+</body>
+</html>
